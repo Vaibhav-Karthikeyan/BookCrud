@@ -49,6 +49,7 @@ public class BookController {
 	
 	@PutMapping("/updateprice/{id}")	
 	public Book updateBook(@PathVariable(value = "id") int id,@RequestParam int price) {
+		System.out.println("hi");
 		return books.updatePrice(id,price);
 	}
 	
